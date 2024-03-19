@@ -89,7 +89,7 @@ Short Url per month = 1 million
 
 Number of short url links per seconds = 1 million /(30 days * 24 hours * 3600 seconds ) ~ 0.4 URLs/second
 
-With 200:1 read/write ratio, number of redirections = 0.4 URLs/s * 50 = 20 URLs/s
+With 50:1 read/write ratio, number of redirections = 0.4 URLs/s * 50 = 20 URLs/s
 
 
 ### Storage Estimate
