@@ -7,10 +7,10 @@ import { ZodError } from 'zod';
  * @returns express middleware function
  */
 export const validate = (schema) => async (req, res, next) => {
-    const { body, query, params, user } = req;
+    const { body, query, params } = req;
 
     try {
-        await schema.parseAsync({ body, query, params, user });
+        await schema.parseAsync({ body, query, params });
         next();
     } catch (err) {
         if (err instanceof ZodError) {
